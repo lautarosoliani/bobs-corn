@@ -39,6 +39,10 @@ The backend enforces the rate limit and responds with 429 Too Many Requests.
 The frontend displays an alert to wait before buying more corn.
 After the Rate Limit Expires:
 The backend allows a new purchase, responds with 200 OK, and the cycle repeats.
+
+![Image 1](frontend/public/bobs-corn-image-1.png)
+![Image 2](frontend/public/bobs-corn-image-2.png)
+![Image 3](frontend/public/bobs-corn-image-3.png)
   
 # Requirements
 Before running the application, ensure you have the following installed:
