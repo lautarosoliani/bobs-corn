@@ -22,12 +22,5 @@ export function useBuyCorn(onSuccessCallback: () => void) {
       onSuccess: () => {
          onSuccessCallback()
       },
-      onError: (error: Error) => {
-         if (error.message === 'Too many requests') {
-            alert('⛔ Wait a minute before buying more corn!')
-         } else {
-            alert('💥 Server error, please try again later.')
-         }
-      },
    })
 }
