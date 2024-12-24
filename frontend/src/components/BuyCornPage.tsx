@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { Label } from '@/components/ui/label'
 import { useState } from 'react'
 import ErrorDialog from '@/components/AlertDialog'
 import useBuyCornHandler from '@/hooks/useBuyCornHandler'
@@ -11,10 +12,10 @@ export default function BuyCornPage() {
 
    return (
       <div className='flex flex-col items-center justify-center min-h-screen p-8'>
-         <h1 className='text-xl font-bold mb-4'>Buy Corn</h1>
-         <p className='mb-4'>
-            You have bought: <strong>{totalPurchases}</strong> corn
-         </p>
+         <Label className='text-3xl font-bold mb-4'>Buy Corn</Label>
+         <Label className='mb-4 text-lg'>
+            You have bought: <Label className='font-bold text-lg'>{totalPurchases}</Label> corn
+         </Label>
          <Button variant='default' onClick={handleBuyCorn}>
             Buy Corn 🌽
          </Button>
